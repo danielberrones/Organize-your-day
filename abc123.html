@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>html/css/js</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#organizeIMG").click(function(){
+    $("#organizeIMG").hide(1000);
+  });
+  $(".main-header").click(function() {
+    $("#organizeIMG").show(1000);
+  })
+});
+
+    </script>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="parent">
+      <div class="child">
+        <!-- <h1>The App</h1> -->
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.organizedbykristi.com%2Fwp-content%2Fuploads%2F2017%2F03%2FDepositphotos_6241124_original.jpg&f=1&nofb=1" alt="Bookstore" style="max-width: 43%;" id="organizeIMG">
+        <h1 class='main-header'>Organize your day with The App</h1>
+        <p>Enter your thoughts and plans and anything else that is passing through your mind so that you can organize your day!</p>
+        <textarea id="text" cols="50" rows="2"></textarea>
+        <button id="submit-button">Submit</button>
+        <button id="cancel-button">Cancel</button>
+        <button id="clear-console">Clear Console</button>
+      </div>
+      <!-- <div class="child1">
+        <button id="submit-button">Submit</button>
+        <button id="cancel-button">Cancel</button>
+        <button id="clear-console">Clear Console</button>
+      </div> -->
+      <ol id="myList">
+      </ol>
+    </div>
+    
+    <script src="app.js"></script>
+  </body>
+</html>
